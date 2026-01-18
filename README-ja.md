@@ -2,8 +2,7 @@
 
 <h1 align="center">ImageRAG WebUI</h1>
 
-This project is based on [ImageRAG](https://github.com/rotem-shalev/ImageRAG) with modifications and extensions developed by Rei Otani, 2025.
-If you find this repository useful, please cite the ImageRAG paper:
+本プロジェクトは ImageRAG を基にしており、Rei Otani（2025）によって改変および拡張が加えられています。本リポジトリが有用であると感じられた場合は、ImageRAG の論文を引用してください。:
 ```
 @article{shalev2025imagerag,
   title={Imagerag: Dynamic image retrieval for reference-guided image generation},
