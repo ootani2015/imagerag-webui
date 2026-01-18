@@ -2,12 +2,12 @@
 
 <h1 align="center">ImageRAG WebUI</h1>
 
-##概要
-ImageRAG WebUIは、オリジナルの ImageRAG をベースに、Stable Diffusion XL (SDXL) と RAG (Retrieval-Augmented Generation) の仕組みを組み合わせ、実用性と操作性を高めるための機能拡張および WebUI (Streamlit) の実装を行った画像生成アプリです。
+## 概要
+ImageRAG WebUIは、オリジナルの [ImageRAG](https://github.com/rotem-shalev/ImageRAG) をベースに、Stable Diffusion XL (SDXL) と RAG (Retrieval-Augmented Generation) の仕組みを組み合わせ、実用性と操作性を高めるための機能拡張および WebUI (Streamlit) の実装を行った画像生成アプリです。
 
 本プロジェクトでは、元々 NVIDIA GPU (Linux) 環境を前提として設計されていた ImageRAG を、MPS (Metal Performance Shaders) への対応や、独自のメモリ管理ロジック（VRAM解放処理）を組み込むことで、Apple Silicon (M1/M2 Mac) 環境でも動作するように最適化させました。
 
-##セットアップ
+## セットアップ
 まずは、ImageRAG_WebUI環境を構築します。
 ```
 conda env create -f environment.yml
@@ -23,9 +23,9 @@ project/
 │   └── Animal_dataset/
 └── imageRAG_UI.py
 ```
-また、プロンプトの最適化と画像内容の判定に**OpenAI APIキー**を使用するので、用意してください。
+また、プロンプトの最適化と画像内容の判定に **OpenAI APIキー** を使用するので、用意してください。
 
-##使い方
+## 使い方
 ImageRAG_WebUI環境をアクティブになっている状態で、以下のコマンドを実行してアプリを起動します。
 ```
 streamlit run imageRAG_UI.py
