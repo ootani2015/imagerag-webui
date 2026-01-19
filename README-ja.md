@@ -41,7 +41,7 @@ streamlit run ImageRAG_UI.py
 
 ![アプリ画面](images/openai_api_key_input.png)
 
-③ 参照ソース（データセット or アップロード画像）を選択します。
+③ サイドバーで参照ソース（データセット or アップロード画像）を選択します。
 
 ・既存の画像集からAIに探させたい場合（データセット）
 
@@ -53,13 +53,23 @@ streamlit run ImageRAG_UI.py
 
 ![アップロード画像参照](images/)
 
-④ 出力されるファイル名を入力して、IP Adapter強度を調整します。
+④ サイドバーで出力されるファイル名を入力し、IP-Adapter強度を調整します。
 
-![出力ファイル名、IP Adapter調整](images/output_filename_ipadapter_settings.png)
+IP-Adapter強度を調整することで、参照画像の反映具合をコントロールできます。
+
+![出力ファイル名、IP-Adapter調整](images/output_filename_ipadapter_settings.png)
+⚠️ 注意点 強度を 1.0 に設定すると、画像が崩れたり、プロンプトの指示が全く反映されなくなったりすることがあります。基本的には 0.4 前後から微調整を始めるのが、最も効率的に高品質な画像を得るコツです。
+
+⑤ プロンプトを入力します。
+
+![プロンプト入力](images/prompt_input.png)
+
+⑥「画像生成を開始」を押して画像生成を開始します。
+
+![画像生成を開始](images/start_image_generation.png)
 
 
-
-
+## 引用
 本プロジェクトは ImageRAG を基にしており、Rei Otani（2025）によって改変および拡張が加えられています。本リポジトリが有用であると感じられた場合は、ImageRAG の論文を引用してください。:
 ```
 @article{shalev2025imagerag,
