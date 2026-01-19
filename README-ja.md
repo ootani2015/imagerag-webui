@@ -36,7 +36,7 @@ streamlit run imageRAG_UI.py
 ```
 export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
 streamlit run ImageRAG_UI.py
-````
+```
 ② アプリの画面に移動したら、サイドバーで Open APIキー を入力します。
 
 ![アプリ画面](images/OpenAPIキー入力.png)
