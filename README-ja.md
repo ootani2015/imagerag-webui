@@ -45,7 +45,7 @@ streamlit run ImageRAG_UI.py
 
 ・既存の画像集からAIに探させたい場合（データセット）
 
-![データセット参照](images/参照画像選択_データセット.png)
+![データセット参照](images/reference_image_selection_dataset.png)
 
 データセット内にある画像は「データセット内にある画像を確認する」を押すと確認することができます。
 
