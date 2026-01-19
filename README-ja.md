@@ -13,7 +13,7 @@ ImageRAG WebUIは、オリジナルの [ImageRAG](https://github.com/rotem-shale
 conda env create -f environment.yml
 conda activate ImageRAG_WebUI
 ```
-次に、datasets フォルダを作成し、その中に画像フォルダ（Tokyo_dataset、animal_dataset）を配置してください。
+次に、datasets フォルダを作成し、その中に画像フォルダ（Tokyo_dataset、animal_datasetなど）を配置してください。
 ```
 project/
 ├── datasets/
