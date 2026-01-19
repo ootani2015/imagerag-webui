@@ -39,7 +39,7 @@ streamlit run ImageRAG_UI.py
 ```
 ② アプリの画面に移動したら、サイドバーで Open APIキー を入力します。
 
-![アプリ画面](images/OpenAPIキー入力.png)
+![アプリ画面](images/openai_api_key_input.png)
 
 ③ 参照ソース（データセット or アップロード画像）を選択します。
 
@@ -55,7 +55,7 @@ streamlit run ImageRAG_UI.py
 
 ④ 出力されるファイル名を入力して、IP Adapter強度を調整します。
 
-![出力ファイル名、IP Adapter調整](images/出力ファイル名_IPAdapter調整.png)
+![出力ファイル名、IP Adapter調整](images/output_filename_ipadapter_settings.png)
 
 
 
