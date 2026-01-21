@@ -31,4 +31,25 @@ project/
 ├── utils.py                 # 共通ユーティリティ関数
 └── environment.yml          # 環境構築用設定ファイル
 ```
+## 環境構築とファイル取得の手順
+以下の手順に従って、ローカル環境にシステムを構築します。
+### ① リポジトリのクローンと移動
+まず、GitHubからプロジェクトを取得し、ディレクトリに移動します。
+```
+git clone https://github.com/ootani2015/imagerag-webui
+cd ImageRAG_WebUI
+```
+### ② 仮想環境の作成
+environment.yml を使用して、依存関係がすべて解決された専用の仮想環境を作成します。
+```
+conda env create -f environment.yml
+conda activate ImageRAG_WebUI
+```
+### ③ 参照用データセットの準備
+datasets フォルダに、参照したい画像群（例: Tokyo_dataset）を配置してください。
+## アプリケーションの起動方法
+環境構築完了後、以下のコマンドでWeb UIを起動します。
+```
+streamlit run imageRAG_UI.py
+```
 
