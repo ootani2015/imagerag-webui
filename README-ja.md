@@ -41,7 +41,7 @@ streamlit run imageRAG_UI.py
 システムによる強制終了の閾値が緩和され、最後まで生成が走りやすくなります。
 ```
 export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
-streamlit run imageRAG_UI.py
+streamlit run ImageRAG_UI.py
 ```
 ### [2] Open APIキー の入力
 アプリの画面に移動したら、サイドバーで Open APIキー を入力します。
