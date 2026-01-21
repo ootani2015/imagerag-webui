@@ -51,7 +51,7 @@ You can check the images in the dataset by clicking "Check images in the dataset
 #### Manual Upload: Directly provide a specific image you want the AI to reference.
 Click "Browse files" to select the image you want to reference.
 ![See uploaded image](images/reference_image_selection_upload.png)
-### [4] Configuration & IP-Adapter Strength
+### [4] Output file name & IP-Adapter adjustmenn
 
 ## Citation
 This project is based on [ImageRAG](https://github.com/rotem-shalev/ImageRAG) with modifications and extensions developed by Rei Otani, 2025.
