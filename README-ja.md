@@ -8,12 +8,17 @@ ImageRAG WebUIは、オリジナルの [ImageRAG](https://github.com/rotem-shale
 本プロジェクトでは、元々 NVIDIA GPU (Linux) 環境を前提として設計されていた ImageRAG を、MPS (Metal Performance Shaders) への対応や、独自のメモリ管理ロジック（VRAM解放処理）を組み込むことで、Apple Silicon (M1/M2 Mac) 環境でも動作するように最適化させました。
 
 ## セットアップ
-まずは、ImageRAG_WebUI環境を構築します。
+まず、GitHubからプロジェクトを取得し、ディレクトリに移動します。
+```
+git clone https://github.com/ootani2015/imagerag-webui
+cd ImageRAG_WebUI
+```
+次に、ImageRAG_WebUI環境を構築します。
 ```
 conda env create -f environment.yml
 conda activate ImageRAG_WebUI
 ```
-次に、datasets フォルダを作成し、その中に画像フォルダ（Tokyo_dataset、animal_datasetなど）を配置してください。
+datasets フォルダを作成し、その中に画像フォルダ（Tokyo_dataset、animal_datasetなど）を配置してください。
 ```
 project/
 ├── datasets/
