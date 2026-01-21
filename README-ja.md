@@ -11,12 +11,12 @@ ImageRAG WebUIは、オリジナルの [ImageRAG](https://github.com/rotem-shale
 まず、GitHubからプロジェクトを取得し、ディレクトリに移動します。
 ```
 git clone https://github.com/ootani2015/imagerag-webui
-cd ImageRAG_WebUI
+cd imagerag-webui
 ```
-次に、ImageRAG_WebUI環境を構築します。
+次に、imagerag-webui環境を構築します。
 ```
 conda env create -f environment.yml
-conda activate ImageRAG_WebUI
+conda activate imagerag-webui
 ```
 datasets フォルダを作成し、その中に画像フォルダ（Tokyo_dataset、animal_datasetなど）を配置してください。
 ```
@@ -32,7 +32,7 @@ project/
 
 ## 使い方
 ### [1] アプリの起動
-ImageRAG_WebUI環境をアクティブになっている状態で、以下のコマンドを実行してアプリを起動します。
+imagerag-webui環境をアクティブになっている状態で、以下のコマンドを実行してアプリを起動します。
 ```
 streamlit run imageRAG_UI.py
 ```
@@ -41,7 +41,7 @@ streamlit run imageRAG_UI.py
 システムによる強制終了の閾値が緩和され、最後まで生成が走りやすくなります。
 ```
 export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
-streamlit run ImageRAG_UI.py
+streamlit run imageRAG_UI.py
 ```
 ### [2] Open APIキー の入力
 アプリの画面に移動したら、サイドバーで Open APIキー を入力します。
