@@ -37,18 +37,18 @@ project/
 まず、GitHubからプロジェクトを取得し、ディレクトリに移動します。
 ```
 git clone https://github.com/ootani2015/imagerag-webui
-cd ImageRAG_WebUI
+cd imagerag-webui
 ```
 ### [2] 仮想環境の作成
 environment.yml を使用して、依存関係がすべて解決された専用の仮想環境を作成します。
 ```
 conda env create -f environment.yml
-conda activate ImageRAG_WebUI
+conda activate imagerag-webui
 ```
 ### [3] 参照用データセットの準備
 datasets フォルダに、参照したい画像群（例: Tokyo_dataset）を配置してください。
 ## アプリケーションの起動方法
-環境構築完了後、ImageRAG_WebUI環境をアクティブになっている状態で、以下のコマンドを実行してアプリを起動します。
+環境構築完了後、imagerag-webui環境をアクティブになっている状態で、以下のコマンドを実行してアプリを起動します。
 ```
 streamlit run imageRAG_UI.py
 ```
