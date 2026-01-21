@@ -52,6 +52,40 @@ You can check the images in the dataset by clicking "Check images in the dataset
 Click "Browse files" to select the image you want to reference.
 ![See uploaded image](images/reference_image_selection_upload.png)
 ### [4] Output file name & IP-Adapter adjustmenn
+Enter the output file name in the sidebar and adjust the IP-Adapter strength.
+
+By adjusting the IP-Adapter strength, you can control how well the reference image is reflected.
+
+![Output file name, IP-Adapter adjustmenn](images/output_filename_ipadapter_settings.png)
+**Tip**: A strength of around 0.4 is recommended for the best balance between prompt adherence and reference image detail. Setting it to 1.0 may lead to image distortion.
+### [5] Input Prompt
+Enter your prompt in the text area.(Recommended: English)
+
+**Note**: While Japanese input is supported via automatic translation, providing prompts in English is recommended for more precise control over composition and style.
+![Input Prompt](images/prompt_input.png)
+### [6]Start Image Generation
+Click "Start Image Generation" to begin image generation.
+
+![Start Image Generation](images/start_image_generation.png)
+**⚠️ Important**: The process takes approximately 20 minutes on Apple Silicon (approx. 5 mins for the initial image and 15 mins for the final RAG-enhanced output).
+### [7]Image Generation Completed
+**Step 1: Displaying the initial image (after about 5 minutes)** After about 5 minutes have passed since the start of generation, the "initial generated image" will be displayed on the left side of the screen. At this stage, you can see how the AI ​​interpreted the input prompts.
+
+**Steps 2~3: AI Judgment and Search** After displaying the initial image, AI will judge the content gaps in the background and search the dataset for the most suitable reference image. During this time, the screen will not be updated, but the process is proceeding normally.
+
+**Step 4: Final image output (after another 15 minutes / total 20 minutes)** After a total of about 15 minutes has passed since the start of image generation, "Final image output" will be displayed on the right side of the screen. This is the final result after the IP-Adapter has combined the details of the reference image.
+
+![View the generated image](images/generation_completed.png)
+Please wait until the status bar shows "Complete!" before closing the browser.
+### [8] Download Image
+If you scroll down to the bottom of the app screen, you will see a link button that says "Download generated image." Clicking this button will download the generated image via your browser.
+
+The file name will be the name you specify in the "Output file name" field on the sidebar.
+
+![Download Image](images/download_image.png)
+You can also right-click any displayed image to save it individually.
+## Acknowledgements
+The author would like to express sincere gratitude to Rotem Shalev-Arkushin and the authors of ImageRAG for their valuable research and for their kind guidance regarding licensing and attribution.
 
 ## Citation
 This project is based on [ImageRAG](https://github.com/rotem-shalev/ImageRAG) with modifications and extensions developed by Rei Otani, 2025.
