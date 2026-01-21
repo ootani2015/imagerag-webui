@@ -1,0 +1,34 @@
+name: ImageRAG_WebUI
+channels:
+  - apple
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26.3
+  - pandas
+  - matplotlib
+  - pillow=10.2.0
+  - tqdm
+  - pip:
+      # M1 MacのGPU(MPS)を最大限活かすためのPyTorch設定
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch
+      - torchvision
+      - torchaudio
+      # 画像生成・処理関連
+      - diffusers==0.31.0
+      - transformers
+      - accelerate
+      - ftfy
+      - open-clip-torch==2.29.0
+      - peft
+      # VLM & API
+      - openai==1.57.0
+      # Web UI
+      - streamlit
+      # その他依存
+      - hf_transfer
+      - opencv-python
