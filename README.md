@@ -51,10 +51,10 @@ You can check the images in the dataset by clicking "Check images in the dataset
 #### Manual Upload: Directly provide a specific image you want the AI to reference.
 Click "Browse files" to select the image you want to reference.
 ![See uploaded image](images/reference_image_selection_upload.png)
-### [4] Output file name & IP-Adapter adjustmenn
+### [4] Output file name & IP-Adapter adjustment
 Enter the output file name in the sidebar and adjust the IP-Adapter strength.
 
-By adjusting the IP-Adapter strength, you can control how well the reference image is reflected.
+By adjusting the IP-Adapter strength, you can control how strongly the reference image influences the output.
 
 ![Output file name, IP-Adapter adjustmenn](images/output_filename_ipadapter_settings.png)
 **Tip**: A strength of around 0.4 is recommended for the best balance between prompt adherence and reference image detail. Setting it to 1.0 may lead to image distortion.
@@ -71,7 +71,7 @@ Click "Start Image Generation" to begin image generation.
 ### [7] Image Generation Completed
 **Step 1: Displaying the initial image (after about 5 minutes)** After about 5 minutes have passed since the start of generation, the "initial generated image" will be displayed on the left side of the screen. At this stage, you can see how the AI ​​interpreted the input prompts.
 
-**Steps 2~3: AI Judgment and Search** After displaying the initial image, AI will judge the content gaps in the background and search the dataset for the most suitable reference image. During this time, the screen will not be updated, but the process is proceeding normally.
+**Steps 2~3: AI Judgment and Search** After the initial image is displayed, the AI analyzes any content gaps in the background and search the dataset for the most suitable reference image. During this time, the screen will not be updated, but the process is proceeding normally.
 
 **Step 4: Final image output (after another 15 minutes / total 20 minutes)** After a total of about 15 minutes has passed since the start of image generation, "Final image output" will be displayed on the right side of the screen. This is the final result after the IP-Adapter has combined the details of the reference image.
 
