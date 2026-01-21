@@ -48,8 +48,13 @@ conda activate ImageRAG_WebUI
 ### ③ 参照用データセットの準備
 datasets フォルダに、参照したい画像群（例: Tokyo_dataset）を配置してください。
 ## アプリケーションの起動方法
-環境構築完了後、以下のコマンドでWeb UIを起動します。
+環境構築完了後、ImageRAG_WebUI環境をアクティブになっている状態で、以下のコマンドを実行してアプリを起動します。
 ```
 streamlit run imageRAG_UI.py
 ```
-
+ローカル上でSDXLを動かすのが難しい場合は、以下のコマンドを実行してアプリを起動してください。
+```
+export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
+streamlit run ImageRAG_UI.py
+```
+※ システムによる強制終了の閾値が緩和され、最後まで生成が走りやすくなります。
