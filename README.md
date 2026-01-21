@@ -63,12 +63,12 @@ Enter your prompt in the text area.(Recommended: English)
 
 **Note**: While Japanese input is supported via automatic translation, providing prompts in English is recommended for more precise control over composition and style.
 ![Input Prompt](images/prompt_input.png)
-### [6]Start Image Generation
+### [6] Start Image Generation
 Click "Start Image Generation" to begin image generation.
 
 ![Start Image Generation](images/start_image_generation.png)
 **⚠️ Important**: The process takes approximately 20 minutes on Apple Silicon (approx. 5 mins for the initial image and 15 mins for the final RAG-enhanced output).
-### [7]Image Generation Completed
+### [7] Image Generation Completed
 **Step 1: Displaying the initial image (after about 5 minutes)** After about 5 minutes have passed since the start of generation, the "initial generated image" will be displayed on the left side of the screen. At this stage, you can see how the AI ​​interpreted the input prompts.
 
 **Steps 2~3: AI Judgment and Search** After displaying the initial image, AI will judge the content gaps in the background and search the dataset for the most suitable reference image. During this time, the screen will not be updated, but the process is proceeding normally.
